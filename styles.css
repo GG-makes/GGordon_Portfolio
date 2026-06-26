@@ -28,6 +28,17 @@ body {
   color: var(--ink);
 }
 
+/* Litera applies its serif stack directly to <p>, but not to list items -
+   match it here so numbered/bulleted lists read consistently with the
+   surrounding prose in articles and project writeups. Scoped to the
+   document body itself (not TOC/nav/sidebar lists, which should stay
+   sans-serif UI text). */
+#quarto-document-content ol,
+#quarto-document-content ul,
+#quarto-document-content li {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
 /* =========================================================================
    IDENTITY SIDEBAR (sidebar.html, injected on every page via
    format.html.include-before-body in _quarto.yml)
