@@ -1,43 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://GG-makes.github.io/GGMakes_Portfolio/projects/aemo-exogenous-shock-notebook.html</loc>
-    <lastmod>2026-06-26T03:10:47.293Z</lastmod>
-  </url>
-  <url>
-    <loc>https://GG-makes.github.io/GGMakes_Portfolio/projects/chronicling-america.html</loc>
+    <loc>https://GG-makes.github.io/GGMakes_Portfolio/projects/ocr-assistance-model.html</loc>
     <lastmod>2026-06-26T03:10:47.295Z</lastmod>
   </url>
   <url>
-    <loc>https://GG-makes.github.io/GGMakes_Portfolio/index.html</loc>
-    <lastmod>2026-06-26T03:10:47.278Z</lastmod>
-  </url>
-  <url>
-    <loc>https://GG-makes.github.io/GGMakes_Portfolio/articles/newspaper-data-at-scale.html</loc>
-    <lastmod>2026-06-26T03:10:47.204Z</lastmod>
-  </url>
-  <url>
-    <loc>https://GG-makes.github.io/GGMakes_Portfolio/articles.html</loc>
-    <lastmod>2026-06-26T03:10:47.203Z</lastmod>
-  </url>
-  <url>
-    <loc>https://GG-makes.github.io/GGMakes_Portfolio/about.html</loc>
-    <lastmod>2026-06-26T03:10:47.202Z</lastmod>
-  </url>
-  <url>
-    <loc>https://GG-makes.github.io/GGMakes_Portfolio/articles/exogenous-shocks-in-practice.html</loc>
-    <lastmod>2026-06-26T03:10:47.203Z</lastmod>
+    <loc>https://GG-makes.github.io/GGMakes_Portfolio/projects/aemo-exogenous-shock.html</loc>
+    <lastmod>2026-06-26T06:35:39.592Z</lastmod>
   </url>
   <url>
     <loc>https://GG-makes.github.io/GGMakes_Portfolio/articles/reflections-on-vibe-coding.html</loc>
     <lastmod>2026-06-26T03:10:47.204Z</lastmod>
   </url>
   <url>
-    <loc>https://GG-makes.github.io/GGMakes_Portfolio/projects/aemo-exogenous-shock.html</loc>
-    <lastmod>2026-06-26T03:10:47.294Z</lastmod>
+    <loc>https://GG-makes.github.io/GGMakes_Portfolio/articles/exogenous-shocks-in-practice.html</loc>
+    <lastmod>2026-06-26T03:10:47.203Z</lastmod>
   </url>
   <url>
-    <loc>https://GG-makes.github.io/GGMakes_Portfolio/projects/ocr-assistance-model.html</loc>
+    <loc>https://GG-makes.github.io/GGMakes_Portfolio/about.html</loc>
+    <lastmod>2026-06-26T06:42:35.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://GG-makes.github.io/GGMakes_Portfolio/articles.html</loc>
+    <lastmod>2026-06-26T03:10:47.203Z</lastmod>
+  </url>
+  <url>
+    <loc>https://GG-makes.github.io/GGMakes_Portfolio/articles/newspaper-data-at-scale.html</loc>
+    <lastmod>2026-06-26T03:10:47.204Z</lastmod>
+  </url>
+  <url>
+    <loc>https://GG-makes.github.io/GGMakes_Portfolio/index.html</loc>
+    <lastmod>2026-06-26T06:53:29.474Z</lastmod>
+  </url>
+  <url>
+    <loc>https://GG-makes.github.io/GGMakes_Portfolio/projects/chronicling-america.html</loc>
     <lastmod>2026-06-26T03:10:47.295Z</lastmod>
   </url>
 </urlset>
