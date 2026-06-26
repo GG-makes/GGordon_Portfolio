@@ -2,6 +2,12 @@
 title: "About"
 ---
 
+<style>
+#title-block-header { display: none; }
+</style>
+
+<p class="eyebrow">Me</p>
+
 ## Grace Gordon
 
 ::: {.about-intro}
