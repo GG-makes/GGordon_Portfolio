@@ -378,12 +378,14 @@ main.content {
 }
 
 /* =========================================================================
-   PROJECTS LIST (homepage) - mirrors the Articles index rhythm: a vertical
-   list of entries divided by hairlines, rather than a sliding carousel.
-   Thumbnails sit on top (outlined so they read as distinct objects against
-   the white page) with tags directly underneath, then title/description.
+   PROJECTS LIST (homepage) - mirrors the Articles index rhythm: a list of
+   entries divided by hairlines, rather than a sliding carousel. Thumbnail
+   sits to the left (outlined so it reads as a distinct object against the
+   white page), text block to the right: tags, then title/description.
    ========================================================================= */
 .project-list-item {
+  display: flex;
+  gap: 24px;
   padding: 28px 0;
   border-top: 1px solid var(--border);
 }
@@ -395,25 +397,32 @@ main.content {
 
 .project-list-thumb-link {
   display: block;
+  flex: 0 0 auto;
 }
 
 .project-list-thumb {
   display: block;
-  width: 100%;
-  max-height: 320px;
-  object-fit: contain;
+  width: 240px;
+  max-width: 240px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center;
   background: var(--paper-tint);
   border: 1px solid var(--paper-tint-border);
   border-radius: 6px;
-  padding: 8px;
   box-sizing: border-box;
+}
+
+.project-list-body {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .project-list-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 14px;
+  margin-top: 0;
 }
 
 .project-list-title {
@@ -421,6 +430,17 @@ main.content {
   font-weight: 600;
   margin-top: 12px;
   margin-bottom: 6px;
+}
+
+@media (max-width: 640px) {
+  .project-list-item {
+    flex-direction: column;
+  }
+
+  .project-list-thumb {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 .project-list-title a {

@@ -1,5 +1,6 @@
 ---
 title: "Projects"
+toc: false
 ---
 
 <style>
@@ -19,6 +20,7 @@ engineering, modelling, and analysis are mine end to end.</p>
 <a class="project-list-thumb-link" href="projects/aemo-exogenous-shock.html">
 <img src="images/ols_vs_hybrid_threshold_comparison.png" class="project-list-thumb">
 </a>
+<div class="project-list-body">
 <div class="project-list-tags">
 <span class="status-badge status-complete">Complete</span>
 <span class="tag-chip">Forecasting (Econometric)</span>
@@ -27,11 +29,13 @@ engineering, modelling, and analysis are mine end to end.</p>
 <h3 class="project-list-title"><a href="projects/aemo-exogenous-shock.html">Reacting to an Exogenous Shock Mid-Forecast</a></h3>
 <p class="project-list-desc">A demo forecasting model showing how to detect and respond to an exogenous shock partway through a forecast horizon, using AEMO electricity demand data.</p>
 </div>
+</div>
 
 <div class="project-list-item">
 <a class="project-list-thumb-link" href="projects/chronicling-america.html">
 <img src="images/wedding-placeholder.png" class="project-list-thumb">
 </a>
+<div class="project-list-body">
 <div class="project-list-tags">
 <span class="status-badge status-complete">Complete</span>
 <span class="tag-chip">ETL Pipelines</span>
@@ -40,11 +44,13 @@ engineering, modelling, and analysis are mine end to end.</p>
 <h3 class="project-list-title"><a href="projects/chronicling-america.html">Chronicling America API Migration</a></h3>
 <p class="project-list-desc">Migrating a bulk newspaper data pipeline to a new API after the legacy access method was deprecated.</p>
 </div>
+</div>
 
 <div class="project-list-item">
 <a class="project-list-thumb-link" href="projects/ocr-assistance-model.html">
 <img src="images/wedding-placeholder.png" class="project-list-thumb">
 </a>
+<div class="project-list-body">
 <div class="project-list-tags">
 <span class="status-badge status-in-progress">In Progress</span>
 <span class="tag-chip">Historical Recipe Series</span>
@@ -52,6 +58,7 @@ engineering, modelling, and analysis are mine end to end.</p>
 </div>
 <h3 class="project-list-title"><a href="projects/ocr-assistance-model.html">Training an OCR Assistance Model</a></h3>
 <p class="project-list-desc">A model-in-progress to assist OCR correction on historical newspaper scans, as part of the Historical Recipe Series.</p>
+</div>
 </div>
 
 </div>

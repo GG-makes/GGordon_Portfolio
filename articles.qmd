@@ -1,5 +1,6 @@
 ---
 title: "Articles"
+toc: false
 listing:
   contents: articles
   type: default
