@@ -1,0 +1,10 @@
+[
+  {
+    "listing": "/articles.html",
+    "items": [
+      "/articles/reflections-on-vibe-coding.html",
+      "/articles/exogenous-shocks-in-practice.html",
+      "/articles/newspaper-data-at-scale.html"
+    ]
+  }
+]
