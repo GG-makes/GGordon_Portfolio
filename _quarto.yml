@@ -3,7 +3,6 @@ project:
   render:
     - "*.qmd"
     - "projects/*.qmd"
-    - "projects/*.ipynb"
     - "articles/*.qmd"
 
 website:

@@ -93,7 +93,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
-  <li><a href="#demo-video" id="toc-demo-video" class="nav-link" data-scroll-target="#demo-video">Demo Video</a></li>
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
   <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
   </ul>
@@ -102,39 +101,73 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 <aside class="site-sidebar">
+
   <div class="site-sidebar-photo"></div>
+
   <div class="site-sidebar-corner"></div>
+
   <div class="site-sidebar-inner">
+
     <h1 class="site-name">Grace Gordon</h1>
+
     <p class="site-role">Data Scientist &amp; Data Engineer</p>
-    <p class="site-tagline">Forecasting demand. Modelling risk. Shipping data products that hold up in production.</p>
+
+    <p class="site-tagline">Forecasting what's coming. Modelling what could go wrong. Shipping data products that hold up in production.</p>
+
     <div class="site-socials">
+
       <a class="site-tag-btn" href="https://github.com/GG-makes" aria-label="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+
       <a class="site-tag-btn" href="https://www.linkedin.com/in/grace-gordon-57459482/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+
     </div>
+
   </div>
+
 </aside>
+
 <nav class="site-topnav">
+
   <a href="../index.html" data-nav="home">Projects</a>
+
   <a href="../articles.html" data-nav="articles">Articles</a>
+
   <a href="../about.html" data-nav="about">About</a>
+
 </nav>
+
 <script>
+
 window.document.addEventListener("DOMContentLoaded", function () {
+
   var path = window.location.pathname;
+
   var key = "home";
+
   if (/about\.html$/.test(path)) {
+
     key = "about";
+
   } else if (/\/articles(\.html$|\/)/.test(path)) {
+
     key = "articles";
+
   }
+
   document.querySelectorAll(".site-topnav a").forEach(function (a) {
+
     if (a.getAttribute("data-nav") === key) {
+
       a.classList.add("active");
+
     }
+
   });
+
 });
+
 </script>
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -173,36 +206,41 @@ window.document.addEventListener("DOMContentLoaded", function () {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>Every demand forecast leans on one assumption: that the relationship you fit on past data still holds across the horizon you’re forecasting. COVID-19 broke that assumption for almost everyone. It was a textbook exogenous shock: it arrived mid-forecast and pulled actual demand away from anything a pre-2020 model would have predicted.</p>
+<p>This is a self-contained demo built on public AEMO operational demand data for Victoria. It asks one narrow question: when your forecast experiences a shock mid-flight, will you know something strange is occurring? How? And how soon?</p>
+<p>Spoiler: the shock that first disrupted 2020 energy demand forecasts wasn’t COVID.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/ols_vs_hybrid_threshold_comparison.png" class="img-fluid figure-img"></p>
 <figcaption>OLS vs Hybrid-GAM: how quickly would each have flagged the COVID break?</figcaption>
 </figure>
 </div>
+<p>Check out the <a href="https://github.com/GG-makes/AEMO-Demand-Forecasting-Demo/blob/main/vic_covid_demand_analysis_with_glossary.ipynb">full notebook on GitHub</a>.</p>
 </section>
 <section id="method" class="level2">
 <h2 class="anchored" data-anchor-id="method">Method</h2>
-<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat:</p>
+<p>The setup is small enough to read end to end, but it mirrors how AEMO predicts and stress-tests medium-to-long term operational demand.</p>
 <ol type="1">
-<li>Lorem ipsum dolor sit amet</li>
-<li>Consectetur adipiscing elit</li>
-<li>Duis aute irure dolor in reprehenderit</li>
+<li><strong>Data.</strong> AEMO operational demand for Victoria, paired with observed weather over the same period, from the beginning of 2017 to the end of 2022. The train set is 2017-2019; the test set is 2020-2022. A true energy demand forecast would draw on more granular time and weather data, plus a bevy of techno-economic variables — this is a bite-sized example dataset.</li>
+<li><strong>Two modelling approaches, one question.</strong> An Ordinary Least Squares model with a linear temperature response serves as the baseline. OLS measures how an outcome — here, energy demand — reacts linearly to a set of parameters — time and weather. The alternative is a hybrid OLS-GAM: the OLS component still explains time effects linearly, while the GAM (Generalized Additive Model) lets temperature have a nonlinear relationship with demand, so long as that relationship follows a smooth curve. The aim was to separate two things that are easy to conflate — a misspecified weather response and a genuine structural shock.</li>
+<li><strong>Uncertainty, the way operators use it.</strong> Each model produces POE10 / POE50 / POE90 bands — the demand levels exceeded 10%, 50%, and 90% of the time — built by resampling historical weather years through the fitted model. With a larger training set, this would let you pinpoint the probability of exceeding a given demand level, the same way AEMO frames its own forecasts.</li>
+<li><strong>Detecting the break.</strong> A structural-break test over the demand series handles the detection half of the question: if you were watching this unfold in real time, when would the data first tell you something had changed — and would it tell you <em>what</em>?</li>
+<li><strong>Accounting for that break.</strong> How do you tell your model that something unusual is occurring? The most direct way is to give it that information explicitly, as a column that says “Yes, COVID lockdowns are happening” or “No, COVID lockdowns are not happening.” This Yes/No data is integrated into the models as a fixed effect.</li>
 </ol>
-</section>
-<section id="demo-video" class="level2">
-<h2 class="anchored" data-anchor-id="demo-video">Demo Video</h2>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
-<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p><strong>The first break wasn’t COVID.</strong> Run break detection over the series and the earliest structural break doesn’t land in March 2020 — it lands months earlier, in the Black Summer bushfire window over the 2019-20 summer. The obvious shock wasn’t the first one. It’s a useful reminder that “the data changed” and “the thing I was worried about happened” are different statements: detection tells you that something shifted, not what.</p>
+<p><strong>The nonlinear fix beat the COVID fix.</strong> Across the three models, adding an explicit COVID intervention term helped less than simply switching to a nonlinear temperature response. Much of what looked like a COVID anomaly under OLS was really the linear model failing to capture the curve of the temperature-demand relationship at the extremes. Once the GAM handled that, the leftover “COVID effect” shrank substantially.</p>
+<p><img src="../images/covid_intervention_metric_bars.png" class="img-fluid"></p>
+<p>Check how much the error bars decrease — the difference between the red bar and the blue bar is the degree to which accounting for COVID makes the models better.</p>
+<p>The two findings make one practical point: when a shock looks like it’s breaking your forecast, check your functional form before you reach for a special-case term. The dummy you add to “fix COVID” may be quietly compensating for a model that was misspecified the whole time.</p>
 </section>
 <section id="links" class="level2">
 <h2 class="anchored" data-anchor-id="links">Links</h2>
 <ul>
-<li><a href="aemo-exogenous-shock-notebook.html">Full analysis notebook</a></li>
-<li><a href="https://github.com/GG-makes">GitHub repo</a></li>
+<li><a href="https://github.com/GG-makes/AEMO-Demand-Forecasting-Demo/blob/main/vic_covid_demand_analysis_with_glossary.ipynb">Full analysis notebook</a></li>
+<li><a href="https://github.com/GG-makes/AEMO-Demand-Forecasting-Demo">GitHub repo</a></li>
 <li><a href="https://www.aemo.com.au/">AEMO data source</a></li>
 </ul>
 

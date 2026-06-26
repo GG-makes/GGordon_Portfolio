@@ -89,47 +89,80 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#projects" id="toc-projects" class="nav-link active" data-scroll-target="#projects">Projects</a></li>
-  <li><a href="#latest-articles" id="toc-latest-articles" class="nav-link" data-scroll-target="#latest-articles">Latest Articles</a></li>
+  <li><a href="#latest-articles" id="toc-latest-articles" class="nav-link active" data-scroll-target="#latest-articles">Latest Articles</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 <aside class="site-sidebar">
+
   <div class="site-sidebar-photo"></div>
+
   <div class="site-sidebar-corner"></div>
+
   <div class="site-sidebar-inner">
+
     <h1 class="site-name">Grace Gordon</h1>
+
     <p class="site-role">Data Scientist &amp; Data Engineer</p>
-    <p class="site-tagline">Forecasting demand. Modelling risk. Shipping data products that hold up in production.</p>
+
+    <p class="site-tagline">Forecasting outcomes. Modelling risk. Shipping data products that hold up in production.</p>
+
     <div class="site-socials">
+
       <a class="site-tag-btn" href="https://github.com/GG-makes" aria-label="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+
       <a class="site-tag-btn" href="https://www.linkedin.com/in/grace-gordon-57459482/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+
     </div>
+
   </div>
+
 </aside>
+
 <nav class="site-topnav">
+
   <a href="./index.html" data-nav="home">Projects</a>
+
   <a href="./articles.html" data-nav="articles">Articles</a>
+
   <a href="./about.html" data-nav="about">About</a>
+
 </nav>
+
 <script>
+
 window.document.addEventListener("DOMContentLoaded", function () {
+
   var path = window.location.pathname;
+
   var key = "home";
+
   if (/about\.html$/.test(path)) {
+
     key = "about";
+
   } else if (/\/articles(\.html$|\/)/.test(path)) {
+
     key = "articles";
+
   }
+
   document.querySelectorAll(".site-topnav a").forEach(function (a) {
+
     if (a.getAttribute("data-nav") === key) {
+
       a.classList.add("active");
+
     }
+
   });
+
 });
+
 </script>
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -153,10 +186,11 @@ window.document.addEventListener("DOMContentLoaded", function () {
 <style>
 #title-block-header { display: none; }
 </style>
-<section id="projects" class="level2">
-<h2 class="anchored" data-anchor-id="projects">Projects</h2>
+<p class="eyebrow">
+Work
+</p>
 <p class="headline">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+Disciplined where it counts. Curious everywhere else.
 </p>
 <p class="lede">
 A few things I’ve built recently. Unless noted otherwise, the data engineering, modelling, and analysis are mine end to end.
@@ -165,7 +199,7 @@ A few things I’ve built recently. Unless noted otherwise, the data engineering
 <div class="project-list-item">
 <a class="project-list-thumb-link" href="projects/aemo-exogenous-shock.html"> <img src="images/ols_vs_hybrid_threshold_comparison.png" class="project-list-thumb"> </a>
 <div class="project-list-tags">
-<p><span class="status-badge status-complete">Complete</span> <span class="tag-chip">Forecasting (Econometric)</span> <span class="tag-chip">Python</span> <span class="tag-chip">One-Off</span></p>
+<p><span class="status-badge status-complete">Complete</span> <span class="tag-chip">Forecasting (Econometric)</span> <span class="tag-chip">One-Off</span></p>
 </div>
 <h3 class="project-list-title anchored">
 <a href="projects/aemo-exogenous-shock.html">Reacting to an Exogenous Shock Mid-Forecast</a>
@@ -177,7 +211,7 @@ A demo forecasting model showing how to detect and respond to an exogenous shock
 <div class="project-list-item">
 <a class="project-list-thumb-link" href="projects/chronicling-america.html"> <img src="images/wedding-placeholder.png" class="project-list-thumb"> </a>
 <div class="project-list-tags">
-<p><span class="status-badge status-complete">Complete</span> <span class="tag-chip">APIs</span> <span class="tag-chip">ETL Pipelines</span> <span class="tag-chip">Python</span> <span class="tag-chip">Historical Recipe Series</span></p>
+<p><span class="status-badge status-complete">Complete</span> <span class="tag-chip">ETL Pipelines</span> <span class="tag-chip">Historical Recipe Series</span></p>
 </div>
 <h3 class="project-list-title anchored">
 <a href="projects/chronicling-america.html">Chronicling America API Migration</a>
@@ -202,11 +236,10 @@ A model-in-progress to assist OCR correction on historical newspaper scans, as p
 <div class="section-divider">
 
 </div>
-</section>
 <section id="latest-articles" class="level2">
 <h2 class="anchored" data-anchor-id="latest-articles">Latest Articles</h2>
 <p class="headline">
-Lorem ipsum dolor sit amet, consectetur adipiscing.
+A few notes on the work, written as I go.
 </p>
 <div class="article-teasers">
 <div class="article-teaser position-relative">

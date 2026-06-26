@@ -150,39 +150,73 @@ window.Quarto = {
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 <aside class="site-sidebar">
+
   <div class="site-sidebar-photo"></div>
+
   <div class="site-sidebar-corner"></div>
+
   <div class="site-sidebar-inner">
+
     <h1 class="site-name">Grace Gordon</h1>
+
     <p class="site-role">Data Scientist &amp; Data Engineer</p>
-    <p class="site-tagline">Forecasting demand. Modelling risk. Shipping data products that hold up in production.</p>
+
+    <p class="site-tagline">Forecasting outcomes. Modelling risk. Shipping data products that hold up in production.</p>
+
     <div class="site-socials">
+
       <a class="site-tag-btn" href="https://github.com/GG-makes" aria-label="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+
       <a class="site-tag-btn" href="https://www.linkedin.com/in/grace-gordon-57459482/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+
     </div>
+
   </div>
+
 </aside>
+
 <nav class="site-topnav">
+
   <a href="./index.html" data-nav="home">Projects</a>
+
   <a href="./articles.html" data-nav="articles">Articles</a>
+
   <a href="./about.html" data-nav="about">About</a>
+
 </nav>
+
 <script>
+
 window.document.addEventListener("DOMContentLoaded", function () {
+
   var path = window.location.pathname;
+
   var key = "home";
+
   if (/about\.html$/.test(path)) {
+
     key = "about";
+
   } else if (/\/articles(\.html$|\/)/.test(path)) {
+
     key = "articles";
+
   }
+
   document.querySelectorAll(".site-topnav a").forEach(function (a) {
+
     if (a.getAttribute("data-nav") === key) {
+
       a.classList.add("active");
+
     }
+
   });
+
 });
+
 </script>
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -221,7 +255,7 @@ Short pieces connected to what I do - sometimes tied directly to a project below
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1782309600000" data-listing-file-modified-sort="1782390511498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="836">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1782309600000" data-listing-file-modified-sort="1782443447204" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="836">
 <div class="thumbnail"><a href="./articles/reflections-on-vibe-coding.html" class="no-external">
 
 <img loading="lazy" src="./images/20260625_rubber_duck.jpg" class="thumbnail-image">
@@ -243,7 +277,7 @@ Jun 25, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1781445600000" data-listing-file-modified-sort="1782386206643" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="77">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1781445600000" data-listing-file-modified-sort="1782443447203" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="77">
 <div class="thumbnail"><a href="./articles/exogenous-shocks-in-practice.html" class="no-external">
 
 <img loading="lazy" src="./images/wedding-placeholder.png" class="thumbnail-image">
@@ -265,7 +299,7 @@ Jun 15, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1779199200000" data-listing-file-modified-sort="1782386216072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1779199200000" data-listing-file-modified-sort="1782443447204" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
 <div class="thumbnail"><a href="./articles/newspaper-data-at-scale.html" class="no-external">
 
 <img loading="lazy" src="./images/wedding-placeholder.png" class="thumbnail-image">

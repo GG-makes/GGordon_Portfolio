@@ -101,39 +101,73 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 <aside class="site-sidebar">
+
   <div class="site-sidebar-photo"></div>
+
   <div class="site-sidebar-corner"></div>
+
   <div class="site-sidebar-inner">
+
     <h1 class="site-name">Grace Gordon</h1>
+
     <p class="site-role">Data Scientist &amp; Data Engineer</p>
-    <p class="site-tagline">Forecasting demand. Modelling risk. Shipping data products that hold up in production.</p>
+
+    <p class="site-tagline">Forecasting what's coming. Modelling what could go wrong. Shipping data products that hold up in production.</p>
+
     <div class="site-socials">
+
       <a class="site-tag-btn" href="https://github.com/GG-makes" aria-label="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+
       <a class="site-tag-btn" href="https://www.linkedin.com/in/grace-gordon-57459482/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+
     </div>
+
   </div>
+
 </aside>
+
 <nav class="site-topnav">
+
   <a href="../index.html" data-nav="home">Projects</a>
+
   <a href="../articles.html" data-nav="articles">Articles</a>
+
   <a href="../about.html" data-nav="about">About</a>
+
 </nav>
+
 <script>
+
 window.document.addEventListener("DOMContentLoaded", function () {
+
   var path = window.location.pathname;
+
   var key = "home";
+
   if (/about\.html$/.test(path)) {
+
     key = "about";
+
   } else if (/\/articles(\.html$|\/)/.test(path)) {
+
     key = "articles";
+
   }
+
   document.querySelectorAll(".site-topnav a").forEach(function (a) {
+
     if (a.getAttribute("data-nav") === key) {
+
       a.classList.add("active");
+
     }
+
   });
+
 });
+
 </script>
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">

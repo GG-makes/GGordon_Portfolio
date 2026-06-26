@@ -6,9 +6,9 @@ title: "Projects"
 #title-block-header { display: none; }
 </style>
 
-## Projects
+<p class="eyebrow">Work</p>
 
-<p class="headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+<p class="headline">Disciplined where it counts. Curious everywhere else.</p>
 
 <p class="lede">A few things I've built recently. Unless noted otherwise, the data
 engineering, modelling, and analysis are mine end to end.</p>
@@ -22,7 +22,6 @@ engineering, modelling, and analysis are mine end to end.</p>
 <div class="project-list-tags">
 <span class="status-badge status-complete">Complete</span>
 <span class="tag-chip">Forecasting (Econometric)</span>
-<span class="tag-chip">Python</span>
 <span class="tag-chip">One-Off</span>
 </div>
 <h3 class="project-list-title"><a href="projects/aemo-exogenous-shock.html">Reacting to an Exogenous Shock Mid-Forecast</a></h3>
@@ -35,9 +34,7 @@ engineering, modelling, and analysis are mine end to end.</p>
 </a>
 <div class="project-list-tags">
 <span class="status-badge status-complete">Complete</span>
-<span class="tag-chip">APIs</span>
 <span class="tag-chip">ETL Pipelines</span>
-<span class="tag-chip">Python</span>
 <span class="tag-chip">Historical Recipe Series</span>
 </div>
 <h3 class="project-list-title"><a href="projects/chronicling-america.html">Chronicling America API Migration</a></h3>
@@ -63,7 +60,7 @@ engineering, modelling, and analysis are mine end to end.</p>
 
 ## Latest Articles
 
-<p class="headline">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+<p class="headline">A few notes on the work, written as I go.</p>
 
 <div class="article-teasers">
 <div class="article-teaser position-relative">

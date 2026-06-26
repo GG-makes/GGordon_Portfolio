@@ -2,13 +2,11 @@
 title: "About"
 ---
 
-<p class="eyebrow">Introduction</p>
-
 ## Grace Gordon
 
 ::: {.about-intro}
 ::: {.about-headshot}
-![](images/headshote.jpg)
+![](images/headshot.jpg){fig-alt="Headshot of Grace Gordon"}
 :::
 
 I like building fun things with real data. My whole career has been about
@@ -27,9 +25,14 @@ principles: clean code, good data hygiene, clear communication, and
 understanding the consequences of the decisions we're making.
 
 I also have a not-so-secret fascination with graph databases and graph
-analytics — lately, exploring how knowledge graphs and generative AI can
+analytics. Lately, I've been exploring how knowledge graphs and generative AI can
 work together to improve both governance and outcomes. Good AI starts with
 good information architecture.
+
+Welcome to my portfolio, where the strategic, the serious, and the 
+occasionally-just-for-fun all live side by side.
+
+
 :::
 
 ### How I Work
