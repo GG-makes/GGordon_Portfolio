@@ -1,0 +1,56 @@
+/*-- scss:defaults --*/
+
+// Palette - black/neutral-gray base with warm accents (amber/sage/clay)
+$ink: #18181b;
+$paper: #ffffff;
+$paper-tint: #eef1f2;
+$slate: #52525b;
+$slate-light: #8e8e96;
+$steel: #2d2d31;
+$amber: #c98a3d;
+$sage: #5c8577;
+$clay: #b96a4e;
+$border-color: #e2e0da;
+
+$font-family-sans-serif: 'Inter', sans-serif;
+$font-family-monospace: 'JetBrains Mono', monospace;
+$headings-font-family: 'Space Grotesk', sans-serif;
+
+// Litera defaults to a 17px root / 1.1rem body size, which reads noticeably
+// larger than the dense, comfortable text size GitHub uses. Bring both
+// down closer to a standard 16px root / ~15px body.
+$font-size-root: 16px;
+$font-size-base: 0.9375rem;
+
+$body-color: $ink;
+$body-bg: $paper;
+$link-color: $steel;
+
+$navbar-bg: $ink;
+$navbar-fg: rgba(255, 255, 255, 0.85);
+$navbar-hl: $sage;
+
+/*-- scss:rules --*/
+
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: $headings-font-family;
+  font-weight: 600;
+}
+
+.navbar-title {
+  font-family: $headings-font-family;
+  font-weight: 600;
+}
+
+// Accent interactive moments (hover, focus) with sage-green rather than
+// the site's dominant steel-blue, so "this is clickable" reads distinctly
+// from "this is branding".
+a:hover {
+  color: $sage;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid $sage;
+  outline-offset: 2px;
+}

@@ -1,0 +1,59 @@
+---
+title: "About"
+---
+
+<p class="eyebrow">Introduction</p>
+
+## Grace Gordon
+
+::: {.about-intro}
+::: {.about-headshot}
+![](images/headshote.jpg)
+:::
+
+I like building fun things with real data. My whole career has been about
+working with people to make that happen.
+
+I'm a Principal Data Scientist & Data Engineer with 10+ years leading data,
+analytics, and AI delivery across banking, infrastructure, defence, and
+government. I build the pipelines, manage the platforms, and build and
+deploy the models — and I also align stakeholders, design solutions, and
+lead delivery. I like being the person in the middle: moving between
+strategy discussions, architecture diagrams, and production code.
+
+Most of my work has been in high-risk, highly regulated environments. My
+approach is collaborative and practical, built around a few simple
+principles: clean code, good data hygiene, clear communication, and
+understanding the consequences of the decisions we're making.
+
+I also have a not-so-secret fascination with graph databases and graph
+analytics — lately, exploring how knowledge graphs and generative AI can
+work together to improve both governance and outcomes. Good AI starts with
+good information architecture.
+:::
+
+### How I Work
+
+- I prefer an email over a meeting.
+- I prefer a short word over a long one.
+- I'd rather be in the room with the people who know the domain than off
+  building in a silo — their context makes my work better.
+- I enjoy mentoring and will almost always make time to talk data.
+- I like solving problems that actually matter and delivering outcomes
+  people can see.
+
+### Skills
+
+- **Data Engineering & Analytics:** Python, SQL, PySpark, Databricks, Microsoft Fabric, ETL, Data Pipelines, Data Architecture
+- **Machine Learning, Statistics & AI:** Forecasting, Statistical Modeling, Predictive Modeling, Machine Learning, Artificial Intelligence (AI), Generative AI, Large Language Models (LLM), Natural Language Processing (NLP), Simio
+- **Data Systems & Graphs:** Neo4j, Cypher, Graph Databases, Knowledge Graphs, Cassandra
+- **Business Intelligence:** Microsoft Power BI, Qlik
+- **Cloud Platforms:** Microsoft Azure
+- **Leadership & Delivery:** Technical Leadership, Stakeholder Management, Vendor Management, Budget Management, Mentoring, Project Delivery, Data Governance, Regulatory Compliance
+- **Tools & Collaboration:** Git, JIRA, Confluence
+
+### Contact
+
+- [Email](mailto:gracegordon@duck.com)
+- [GitHub](https://github.com/GG-makes)
+- [LinkedIn](https://www.linkedin.com/in/grace-gordon-57459482/)

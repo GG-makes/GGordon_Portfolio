@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ndombrowski.github.io)",
+      "PowerShell(conda activate claude)",
+      "PowerShell(conda info --envs)",
+      "PowerShell(Get-Process | Where-Object { $_.ProcessName -match \"quarto|deno\" } | Stop-Process -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 1)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:6420/)",
+      "Bash(curl -s http://localhost:6420/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:6701/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:7955/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8267/)",
+      "Bash(curl -s http://localhost:8267/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8579/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8891/)",
+      "Bash(curl -s http://localhost:8891/)",
+      "Bash(curl -s http://localhost:8891/about.html)",
+      "WebFetch(domain:weblium.com)"
+    ]
+  }
+}

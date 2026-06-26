@@ -1,0 +1,30 @@
+---
+title: "Reflections on Vibe Coding: Get the Craftsman a Duck that Talks Back"
+description: "What changed when I pointed AI at a from-scratch build versus a legacy API migration - and what the research says about why."
+date: 2026-06-25
+image: "../images/20260625_rubber_duck.jpg"
+---
+
+![No matter what I did, I couldn't find an image of a Claude-branded rubber duck. Come on, Anthropic, this is an obvious one.](../images/20260625_rubber_duck.jpg)
+
+<p class="img-credit">Image courtesy of <a href="https://www.rawpixel.com/image/5915285/free-rubber-ducks-image-public-domain-cc0-photo">rawpixel</a> (CC0).</p>
+
+I have been experimenting with vibe coding recently. I'd be a fool not to. My take? AI's value depends entirely on what kind of work you're pointing it at — net-new code vs. legacy/migration.
+
+An article by Business Insider titled "Software engineers are facing an 'identity crisis bordering on depression,' Menlo Ventures partner says" states that software engineering teams are splitting into two camps — the camp of "Lazy Engineers," who produce the code, and the "Craftsmen," who trail after them, mopping it up. I can sympathize with the Craftsmen here, since reviewing written code is one of the most hated tasks in software engineering. I'm one of the few odd ducks that actually enjoys it.
+
+I recently tried using AI on two projects. First, this website, which was primarily made with the publishing system Quarto. The second was my migration of newsagger, a Python module for querying American newspapers from the Chronicling America collection, where I migrated the existing bulk downloader from the pre-August 2025 Library of Congress API rules to the current standard.
+
+My takeaways from the whole experience:
+
+1. **For the website — loved it.** Yes, it was a lot of back and forth of "yes, that looks nice," and "no, not that." But to be honest, unless it's a dashboard I don't particularly enjoy designing frontends. AI allowed me to quickly finish a project without sinking time into learning a once-off technology (Quarto).
+2. **But out-of-the-box AI doesn't have the discipline — or research skills — to handle a major migration.** Migrations of code bases from one standard require a light touch. You need to stick to limited changes. Your superior method of calculating percentage loss, or translating the user's text query? If even one other function would need updating to accept your change, you're wasting time. Not to mention you run the risk of confusing your performance changes for the changes required by migration, resulting in one giant confusing mess of spaghetti.
+
+   Another little-talked-about task involved in migrating a legacy codebase to a new standard is the research involved. For the migration project, I had to determine how the API query logic for Chronicling America had changed. That meant not only going to Chronicling America's current website, but spinning up my own Jupyter notebook to test my queries <span class="footnote-inline">(yes, Postman would have been an option in hindsight — we all have our first instincts)</span>, checking the deprecated Chronicling America web portal Chronam, and using the Wayback Machine to access historical query instructions. There are ways of understanding sequences of publishing, and how to look back at old materials. But as of today, your Claude and your Copilot don't do that.
+3. **But it's better than a rubber ducky.** In order to properly migrate the module newsagger, I had to refactor how the module handled API query creation and response interpretation. Before, it was spread throughout the module. I needed to bring it all together so that changes to interpretation could be tracked and better implemented. I liked bouncing ideas off Claude for how to best architect the code. Claude might not have been directly coding in these chats, but it was helpful.
+
+After my experiences, I went and checked the literature on AI's efficiency contribution to coding. One result straight from the research: in [*Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity*](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) (METR), the productivity gain from AI was tested with 16 developers. Screen recordings found the developers were **19% slower** with AI tools — despite predicting a 24% speedup beforehand and still believing afterward they'd been 20% faster. These were developers working on their pre-existing codebases, legacy code and all. In contrast, a separate Copilot RCT — [*The Impact of AI on Developer Productivity: Evidence from GitHub Copilot*](https://arxiv.org/abs/2302.06590) — of developers recruited via Upwork found **55% faster completion on a self-contained, well-defined task** — building a JavaScript HTTP server from scratch. My experience may not be a fluke after all.
+
+I'll continue doing some vibe coding for now. It's the best way to stay up to date as AI coding changes, after all. But I think for organizations to make the best use of coding assistants, they need to sit down and think about when they add value. Not all projects need AI to directly touch the code. For well-scoped new builds, it's nice to be lazy. Even isolated code bases with excellent documentation and well-scoped sprints could benefit (let me know if you ever find one of those organizations — I've always wanted to go to Heaven). But when we're touching a mass of legacy code, the complex systems the business has in production? It may be that the AI does not need to directly touch the code. After all, Craftsmen don't need a ghostwriter for what they're doing. They need a duck that talks back.
+
+<p class="article-related">Related project: <a href="../projects/chronicling-america.html">Chronicling America API Migration</a></p>

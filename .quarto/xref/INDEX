@@ -1,0 +1,35 @@
+{
+  "index.qmd": {
+    "index.html": "5214c30a"
+  },
+  "about.qmd": {
+    "about.html": "9df650c2"
+  },
+  "projects/aemo-exogenous-shock.qmd": {
+    "aemo-exogenous-shock.html": "6f270898"
+  },
+  "projects/chronicling-america.qmd": {
+    "chronicling-america.html": "b072aad9"
+  },
+  "TAGS.md": {
+    "TAGS.html": "2fc65128"
+  },
+  "articles.qmd": {
+    "articles.html": "d7a08489"
+  },
+  "projects/ocr-assistance-model.qmd": {
+    "ocr-assistance-model.html": "307b5637"
+  },
+  "articles/exogenous-shocks-in-practice.qmd": {
+    "exogenous-shocks-in-practice.html": "783b8cac"
+  },
+  "articles/newspaper-data-at-scale.qmd": {
+    "newspaper-data-at-scale.html": "59430bb1"
+  },
+  "articles/reflections-on-vibe-coding.qmd": {
+    "reflections-on-vibe-coding.html": "b05e2134"
+  },
+  "projects/aemo-exogenous-shock-notebook.ipynb": {
+    "aemo-exogenous-shock-notebook.html": "a03c7303"
+  }
+}

@@ -1,0 +1,32 @@
+---
+title: "Training an OCR Assistance Model"
+description: "A model-in-progress to assist OCR correction on historical newspaper scans, as part of the Historical Recipe Series."
+date: 2026-06-25
+categories: ["Historical Recipe Series", "Python"]
+image: "../images/wedding-placeholder.png"
+---
+
+## Overview
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+![Lorem ipsum placeholder image](../images/wedding-placeholder.png)
+
+## Approach
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur:
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Sed do eiusmod tempor incididunt ut labore
+
+## Status
+
+This project is in progress. Results so far are preliminary.
+
+## Links
+
+- [GitHub repo](https://github.com/GG-makes)

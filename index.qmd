@@ -1,0 +1,79 @@
+---
+title: "Projects"
+---
+
+<style>
+#title-block-header { display: none; }
+</style>
+
+## Projects
+
+<p class="headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+<p class="lede">A few things I've built recently. Unless noted otherwise, the data
+engineering, modelling, and analysis are mine end to end.</p>
+
+<div class="project-list">
+
+<div class="project-list-item">
+<a class="project-list-thumb-link" href="projects/aemo-exogenous-shock.html">
+<img src="images/ols_vs_hybrid_threshold_comparison.png" class="project-list-thumb">
+</a>
+<div class="project-list-tags">
+<span class="status-badge status-complete">Complete</span>
+<span class="tag-chip">Forecasting (Econometric)</span>
+<span class="tag-chip">Python</span>
+<span class="tag-chip">One-Off</span>
+</div>
+<h3 class="project-list-title"><a href="projects/aemo-exogenous-shock.html">Reacting to an Exogenous Shock Mid-Forecast</a></h3>
+<p class="project-list-desc">A demo forecasting model showing how to detect and respond to an exogenous shock partway through a forecast horizon, using AEMO electricity demand data.</p>
+</div>
+
+<div class="project-list-item">
+<a class="project-list-thumb-link" href="projects/chronicling-america.html">
+<img src="images/wedding-placeholder.png" class="project-list-thumb">
+</a>
+<div class="project-list-tags">
+<span class="status-badge status-complete">Complete</span>
+<span class="tag-chip">APIs</span>
+<span class="tag-chip">ETL Pipelines</span>
+<span class="tag-chip">Python</span>
+<span class="tag-chip">Historical Recipe Series</span>
+</div>
+<h3 class="project-list-title"><a href="projects/chronicling-america.html">Chronicling America API Migration</a></h3>
+<p class="project-list-desc">Migrating a bulk newspaper data pipeline to a new API after the legacy access method was deprecated.</p>
+</div>
+
+<div class="project-list-item">
+<a class="project-list-thumb-link" href="projects/ocr-assistance-model.html">
+<img src="images/wedding-placeholder.png" class="project-list-thumb">
+</a>
+<div class="project-list-tags">
+<span class="status-badge status-in-progress">In Progress</span>
+<span class="tag-chip">Historical Recipe Series</span>
+<span class="tag-chip">Python</span>
+</div>
+<h3 class="project-list-title"><a href="projects/ocr-assistance-model.html">Training an OCR Assistance Model</a></h3>
+<p class="project-list-desc">A model-in-progress to assist OCR correction on historical newspaper scans, as part of the Historical Recipe Series.</p>
+</div>
+
+</div>
+
+<div class="section-divider"></div>
+
+## Latest Articles
+
+<p class="headline">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+
+<div class="article-teasers">
+<div class="article-teaser position-relative">
+<h3><a class="stretched-link" href="articles/reflections-on-vibe-coding.html">Reflections on Vibe Coding: Get the Craftsman a Duck that Talks Back</a></h3>
+<p>What changed when I pointed AI at a from-scratch build versus a legacy API migration - and what the research says about why.</p>
+</div>
+<div class="article-teaser position-relative">
+<h3><a class="stretched-link" href="articles/exogenous-shocks-in-practice.html">Lorem Ipsum Dolor Sit Amet Consectetur</a></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+</div>
+</div>
+
+<p class="view-all-link"><a href="articles.html">View all articles &rarr;</a></p>

@@ -1,0 +1,38 @@
+---
+title: "Reacting to an Exogenous Shock Mid-Forecast: A Demo Model with AEMO Electricity Demand Data"
+description: "A demo forecasting model showing how to detect and respond to an exogenous shock partway through a forecast horizon, using AEMO electricity demand data."
+date: 2026-06-24
+categories: ["Forecasting (Econometric)", Python, "One-Off"]
+image: "../images/ols_vs_hybrid_threshold_comparison.png"
+---
+
+## Overview
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua.
+
+![OLS vs Hybrid-GAM: how quickly would each have flagged the COVID break?](../images/ols_vs_hybrid_threshold_comparison.png)
+
+## Method
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat:
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Duis aute irure dolor in reprehenderit
+
+## Demo Video
+
+{{< video https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID >}}
+
+## Results
+
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum.
+
+## Links
+
+- [Full analysis notebook](aemo-exogenous-shock-notebook.html)
+- [GitHub repo](https://github.com/GG-makes)
+- [AEMO data source](https://www.aemo.com.au/)

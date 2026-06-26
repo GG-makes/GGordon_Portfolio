@@ -1,0 +1,19 @@
+---
+title: "Articles"
+listing:
+  contents: articles
+  type: default
+  sort: "date desc"
+  categories: false
+  fields: [image, date, title, description]
+---
+
+<style>
+#title-block-header { display: none; }
+</style>
+
+<p class="eyebrow">Writing</p>
+
+<p class="headline">Notes on forecasting, data engineering, and things adjacent to the work.</p>
+
+<p class="lede">Short pieces connected to what I do - sometimes tied directly to a project below.</p>
